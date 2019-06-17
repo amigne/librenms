@@ -116,7 +116,7 @@ function load_discovery(&$device)
  * @param bool $force_module Ignore device module overrides
  * @return bool if the device was discovered or skipped
  */
-function discover_device(&$device, $force_module = false)
+function discover_device($device, $force_module = false)
 {
     if ($device['snmp_disable'] == '1') {
         return false;
